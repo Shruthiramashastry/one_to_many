@@ -1,0 +1,30 @@
+1. git init
+
+2. git add .
+
+3. git commit -m "Add all my files"
+
+4. git remote add origin https://github.com/Shruthiramashastry/one_to_many.git
+
+//Upload of project from scratch require git pull origin master.
+
+//git pull origin master
+
+5. git push -u origin master
+
+
+
+Using the command line, remove any git remotes currently configured for the repository.
+
+# Show existing remotes
+$ git remote -v
+> origin	git@git-server/octocat/hello-world.git (fetch)
+> origin	git@git-server/octocat/hello-world.git (push)
+# Remove existing remotes
+$ git remote remove origin
+
+
+To save changes to git 
+$git add .
+$git commit -m 'Changes done'
+$git push
