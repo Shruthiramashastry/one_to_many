@@ -30,3 +30,14 @@ route::get('read',function(){
         echo $post->title."<br/>";
     }
 });
+route::get('update',function()
+{
+    $user = User::findOrFail(1);
+    //$user->posts()->whereId(1)->update(['title'=>'Parti']);
+    $user->posts()->where('id','=',2)->update(['title'=>'Particular']);
+});
+
+route::get('delete',function(){
+    $user = User::find(1);
+    $user->posts()->where('id','=',2)->delete();
+});
